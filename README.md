@@ -8,6 +8,8 @@ BUPT Mobile Internet Course android part chapter2
 
 主要的几个java文件和apk文件复制了一份放在了本级文件夹下，方便查看。
 
+学号：2017211428
+
 ## 0. preface
 
 a. 对Exercise1进行了一点小魔改，在layout下增加了exercise.xml，更容易搞清楚生命周期都做了什么。
