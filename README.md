@@ -32,23 +32,23 @@ Exercise1的页面中：
 
 ### a. 先把屏幕倒过来，刚进入时两个log记录的值相同
 
-<img src="./snapshots/Screenshot1.jpg" alt="avatar" style="zoom: 33%;" />
+<img src="./snapshots/Screenshot1.jpg" alt="avatar" />
 
 ### b. 转动屏幕，可以发现上方没有记录onStop和onDestroy。
 
-<img src="./snapshots/Screenshot2.jpg" alt="avatar" style="zoom: 25%;" />
+<img src="./snapshots/Screenshot2.jpg" alt="avatar"/>
 
 由于onStop和onDestroy在onSaveInstanceState之前执行，所以屏幕上方的log里并没有记录onStop和onDestroy。
 
 ### c. 按退出键退出该页面，再次进入之后：
 
-<img src="./snapshots/Screenshot3.jpg" alt="avatar" style="zoom: 25%;" />
+<img src="./snapshots/Screenshot3.jpg" alt="avatar"/>
 
 上方的log重新开始记录，用static变量存的log仍然存在。
 
 ### d. 重新打开app进入Exercise1之后，退到桌面，再进入程序：
 
-<img src="./snapshots/Screenshot4.jpg" alt="avatar" style="zoom: 25%;" />
+<img src="./snapshots/Screenshot4.jpg" alt="avatar" />
 
 可见程序并没有被destroy，只执行了Stop。
 
@@ -91,11 +91,11 @@ Exercise1的页面中：
 
 刚进入Exercise3的界面（惯例首行瞎吐槽）：
 
-<img src="./snapshots/Screenshot5.jpg" alt="avatar" style="zoom: 25%;" />
+<img src="./snapshots/Screenshot5.jpg" alt="avatar"/>
 
 点击item之后转入的界面里提示这是第几个item：
 
-<img src="./snapshots/Screenshot6.jpg" alt="avatar" style="zoom: 25%;" />
+<img src="./snapshots/Screenshot6.jpg" alt="avatar" />
 
 回到原来的界面，上下滑动，看logcat就能发现移出屏幕的item被优化掉了（21->30，往回划出现20）：
 
